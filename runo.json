@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "format": "npm run format",
+    "format:check": "npm run format:check",
+    "lint": "npm run lint"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "runo",
+  "version": "0.0.0",
+  "description": "Simplifies the process of running command line scripts, similar to npm scripts but for any type of project.",
+  "main": "./bin/main.js",
+  "bin": {
+    "runo": "./bin/main.js"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rimraf bin && rollup -c",
+    "format": "rome format . --write",
+    "format:check": "rome format .",
+    "lint": "rome check ."
+  },
+  "dependencies": {
+    "colorette": "^2.0.19",
+    "commander": "^10.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.0.0",
+    "@types/node": "^18.11.18",
+    "esbuild": "^0.17.5",
+    "rimraf": "^4.1.2",
+    "rollup": "^3.13.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "rome": "^11.0.0",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "bin"
+  ],
+  "license": "MIT",
+  "author": "Kevin Hermawan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinhermawan/runo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kevinhermawan/runo/issues"
+  },
+  "homepage": "https://github.com/kevinhermawan/runo#readme",
+  "keywords": [
+    "cli",
+    "command line",
+    "command line interface",
+    "script runner",
+    "script management",
+    "npm scripts",
+    "run scripts",
+    "watch files",
+    "automated tasks",
+    "configuration file"
+  ]
+}
