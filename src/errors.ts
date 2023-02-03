@@ -14,7 +14,7 @@ export const CONFIG_FILE_NOT_JSON_ERROR = () => {
 
 export const CONFIG_FILE_NOT_FOUND_ERROR = (file: string) => {
   console.error(
-    red(`Missing config file. Please ensure that '${file}' file exists.`)
+    red(`Missing config file. Please ensure that '${file}' file exists.`),
   );
 
   process.exit(1);
@@ -22,7 +22,7 @@ export const CONFIG_FILE_NOT_FOUND_ERROR = (file: string) => {
 
 export const SCRIPT_NAME_NOT_FOUND_ERROR = (name: string) => {
   console.error(
-    red(`The script '${name}' could not be found in the config file.`)
+    red(`The script '${name}' could not be found in the config file.`),
   );
 
   process.exit(1);
@@ -31,8 +31,8 @@ export const SCRIPT_NAME_NOT_FOUND_ERROR = (name: string) => {
 export const DIRECTORY_NOT_FOUND_ERROR = (name: string) => {
   console.error(
     red(
-      `The directory '${name}' could not be found. Please make sure that there is no spelling or typing error.`
-    )
+      `The directory '${name}' could not be found. Please make sure that there is no spelling or typing error.`,
+    ),
   );
 
   process.exit(1);

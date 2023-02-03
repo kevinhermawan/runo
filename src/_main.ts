@@ -17,7 +17,7 @@ program
   .option("-c, --config <config file>", "path to the config file", "runo.json")
   .option(
     "-w, --watch <directories>",
-    "directories to be watched, separated by commas"
+    "directories to be watched, separated by commas",
   )
   .action((script, { config, watch }) => {
     if (watch) {
