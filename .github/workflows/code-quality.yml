@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Run lint
-        run: npm run lint
+        run: npx runo lint
 
   build:
     runs-on: ubuntu-latest
@@ -49,4 +49,4 @@ jobs:
         run: npm install
 
       - name: Build package
-        run: npm run build
+        run: npx runo build
