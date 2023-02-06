@@ -1,4 +1,3 @@
-import { red } from "colorette";
 import { spawn } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 
@@ -27,22 +26,10 @@ export function runner({ script, configFile }: Args) {
     if (scriptToRun) {
       const command = scriptToRun.split(" ")[0];
       const args = scriptToRun.split(" ").slice(1);
-
-      const child = spawn(command, args, {
-        stdio: "pipe",
-        shell: true,
-      });
+      const child = spawn(command, args, { shell: true, stdio: "inherit" });
 
       child.on("error", (error) => {
         ANY_ERROR(error.message);
-      });
-
-      child.stdout.on("data", (data) => {
-        process.stdout.write(data.toString());
-      });
-
-      child.stderr.on("data", (data) => {
-        process.stderr.write(red(data.toString()));
       });
     } else {
       SCRIPT_NAME_NOT_FOUND_ERROR(script);
