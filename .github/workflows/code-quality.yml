@@ -24,11 +24,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Install Runo
+        run: npm install -g runo
+
       - name: Install dependencies
         run: npm install
 
       - name: Run lint
-        run: npx runo lint
+        run: runo lint
 
   build:
     runs-on: ubuntu-latest
@@ -45,8 +48,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Install Runo
+        run: npm install -g runo
+
       - name: Install dependencies
         run: npm install
 
       - name: Build package
-        run: npx runo build
+        run: runo build
