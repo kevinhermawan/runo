@@ -1,6 +1,6 @@
 {
   "name": "runo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simplifies the process of running command line scripts, similar to npm scripts but for any type of project.",
   "main": "./bin/main.js",
   "bin": {
