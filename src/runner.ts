@@ -36,7 +36,7 @@ export function runner({ script, configFile }: Args) {
     } else {
       SCRIPT_NAME_NOT_FOUND_ERROR(
         script,
-        closest(script, Object.keys(scripts))
+        closest(script, Object.keys(scripts)),
       );
     }
   } else {
