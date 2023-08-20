@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "@rollup/plugin-json": "^6.0.0",
-    "@types/node": "^20.4.9",
-    "esbuild": "^0.19.0",
+    "@types/node": "^20.5.1",
+    "esbuild": "^0.19.2",
     "rimraf": "^5.0.1",
     "rollup": "^3.28.0",
     "rollup-plugin-esbuild": "^5.0.0",
