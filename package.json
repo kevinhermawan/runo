@@ -9,9 +9,9 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rimraf bin && rollup -c",
-    "format": "rome format . --write",
-    "format:check": "rome format .",
-    "lint": "rome check ."
+    "format": "biome format . --write",
+    "format:check": "biome format .",
+    "lint": "biome check ."
   },
   "dependencies": {
     "colorette": "^2.0.20",
@@ -19,13 +19,13 @@
     "fastest-levenshtein": "^1.0.16"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.2.2",
     "@rollup/plugin-json": "^6.0.0",
     "@types/node": "^20.6.0",
     "esbuild": "^0.19.2",
     "rimraf": "^5.0.1",
     "rollup": "^3.29.1",
     "rollup-plugin-esbuild": "^5.0.0",
-    "rome": "^12.1.3",
     "typescript": "^5.2.2"
   },
   "files": [
