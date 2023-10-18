@@ -15,17 +15,17 @@
   },
   "dependencies": {
     "colorette": "^2.0.20",
-    "commander": "^11.0.0",
+    "commander": "^11.1.0",
     "fastest-levenshtein": "^1.0.16"
   },
   "devDependencies": {
     "@biomejs/biome": "1.2.2",
-    "@rollup/plugin-json": "^6.0.0",
-    "@types/node": "^20.6.0",
-    "esbuild": "^0.19.2",
-    "rimraf": "^5.0.1",
-    "rollup": "^3.29.1",
-    "rollup-plugin-esbuild": "^5.0.0",
+    "@rollup/plugin-json": "^6.0.1",
+    "@types/node": "^20.8.7",
+    "esbuild": "^0.19.5",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.1.4",
+    "rollup-plugin-esbuild": "^6.1.0",
     "typescript": "^5.2.2"
   },
   "files": [
