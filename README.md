@@ -4,10 +4,6 @@
 
 Runo is a Command Line Interface (CLI) tool that simplifies the process of running command line scripts, similar to [npm scripts](https://docs.npmjs.com/cli/v9/using-npm/scripts) but for any type of project.
 
-## Articles
-
-- [Open-sourcing Runo: Simplify The Process of Running Command Line Scripts](https://www.hermawan.io/blog/runo)
-
 ## Features
 
 - Improves script readability and maintainability
